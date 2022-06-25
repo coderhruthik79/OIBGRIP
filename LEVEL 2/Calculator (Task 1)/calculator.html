@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />   
+        <link rel="icon" href="../calculator/calculator.png" type="img/x-icon"/>
+        <link rel="stylesheet"  href="./calculator.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../Lib/anime-master/lib/anime.min.js"></script>
+        <script src="./main.js"></script>
+    </head>
+    <body>
+        <div><h1 id="calc-title">CALCULATOR</h1></div>
+        <table>
+            <tbody>
+            <tr><td colspan="4"><input type="text" id="io" class="ios" value=""></td></tr>
+            <tr>
+                <td><button value="AC" id="AC-btn" class="btn-ac" onclick="clr()">AC</button></td>
+                <td><button value="DEL" id="del-btn" class="btn-del btn-operator" onclick="del()">DEL</button></td>
+                <td><button value="√" id="num-btn" class="btn-sqrt btn-operator" onclick="display('√')"><label>√</label></button></td>
+                <td><button value="+" id="num-btn" class="btn-sum btn-operator" onclick="display('+')"><label>+</label></button></td>
+            </tr>
+            
+            <tr>
+                <td><button value="1" id="num-btn" class="btn-1" onclick="display('1')"><label>1</label></button></td>
+                <td><button value="2" id="num-btn" class="btn-2" onclick="display('2')"><label>2</label></button></td>
+                <td><button value="3" id="num-btn" class="btn-3" onclick="display('3')"><label>3</label></button></td>
+                <td><button value="/" id="num-btn" class="btn-quotient btn-operator" onclick="display('/')"><label>÷</label></button></td>
+            </tr>
+            
+            <tr>
+                <td><button value="7" id="num-btn" class="btn-7" onclick="display('7')"><label>7</label></button></td>
+                <td><button value="8" id="num-btn" class="btn-8" onclick="display('8')"><label>8</label></button></td>
+                <td><button value="9" id="num-btn" class="btn-9" onclick="display('9')"><label>9</label></button></td>
+                <td><button class="mul" value="*" id="num-btn" class="btn-mul btn-operator" onclick="display('*')"><label>x</label></button></td>
+            </tr>
+            
+            <tr>
+                <td><button value="4" id="num-btn" class="btn-4" onclick="display('4')"><label>4</label></button></td>
+                <td><button value="5" id="num-btn" class="btn-5" onclick="display('5')"><label>5</label></button></td>
+                <td><button value="6" id="num-btn" class="btn-6" onclick="display('6')"><label>6</label></button></td>
+                <td><button value="-" id="num-btn" class="btn-sub btn-operator" onclick="display('-')"><label>-</label></button></td>
+            </tr>
+            
+            <tr>
+                <td><button value="%" id="num-btn" class="btn-mod" onclick="display('%')"><label>MOD</label></button></td>
+                <td><button value="0" id="num-btn" class="btn-zero" onclick="display('0')"><label>0</label></button></td>
+                <td><button value="." id="num-btn" class="btn-dec" onclick="display('.')"><label>.</label></button></td>
+                <td><button value="=" id="eq-btn" class="btn-eq" onclick="solve()"><label>=</label></button></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+    </body>
+</html>
