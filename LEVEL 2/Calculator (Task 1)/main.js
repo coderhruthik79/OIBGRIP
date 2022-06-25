@@ -56,11 +56,14 @@ $(document).ready(function(){
         const end = Number(eval(exp_string));
         console.log(end);
         anime({
-targets : '.ios',
-value:[0,end],
-round:(isFloat(end))?2:1,
-speed:'fast',
-color:'blue',
+        targets : '.ios',
+        value:[0,end],
+        round:(isFloat(end))?2:1,
+        speed:'fast',
+        color:'blue',
         })
-    })
+    });
+    $('.btn-eq').click(function(){
+        $('.btn-eq[value]').css("color:blue;");
+    });
 })

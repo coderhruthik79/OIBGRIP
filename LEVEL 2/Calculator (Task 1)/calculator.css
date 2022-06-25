@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #1D2228;
 }
 div{
     margin-left: auto;
@@ -8,20 +8,23 @@ div{
 }
 h1{
 text-align: center;
-color: black;
+color: white;
 }
 #calc-title{
     margin-left: 3rem;
     margin-right:3rem;
 }
 table{
-    border: 2px solid black;
+    border-spacing: 0px;
+    border: 5px solid white;
+    border-radius:5px;
     margin-top: 70px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     width: 370px;
-    height: 440px;
+    height: 480px;
+    background-color: white;
 }
 #tbody{
     border: 1px solid black;
@@ -31,12 +34,15 @@ table{
     height: 60px;
     font-size: 25px;
     font-weight: 530;
+    background-color: yellow;
 }
 #num-btn:hover{
     background-color:green;
     color:white;
 }
 #io{
+    background-color: #1D222830;
+    padding-top: 5px;
     border: 2px solid black;
     text-align: right;
     width: 371px;
@@ -44,20 +50,30 @@ table{
     font-size: 2.5rem;
 }
 #AC-btn{
+    border: 2px solid black;
     width: 92px;
     height: 60px;
     font-size: 1.25rem;
 }
-
+#AC-btn:hover{
+    background-color: red;
+    color:white;
+}
 .btn-operator label{
     font-size: 1.6rem;
     font-weight: 530;
 }
 .btn-del{
+    border: 2px solid black;
     width: 92px;
     height: 60px;
     font-size: 1.25rem;
 }
+.btn-del:hover{
+    background-color: red;
+    color: antiquewhite;
+}
+
 .btn-eq{
     width:92px;
     height: 60px;
@@ -66,5 +82,5 @@ table{
     background-color: royalblue;
 }
 .btn-eq:hover{
-    background-color:yellow;
+    background-color:#FB8122;
 }   
